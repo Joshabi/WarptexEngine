@@ -1,6 +1,11 @@
 # Prerequisites
 *.d
 
+# Locations
+.vs/
+Warptex/.vs
+Warptex/x64/Debug
+
 # Compiled Object files
 *.slo
 *.lo
