@@ -11,6 +11,8 @@
 #include <SDL.h>
 #include <iostream>
 #include "Logger.h"
+#include "SDL_mixer.h"
+#include "SDL_image.h"
 
 int main(int argc, char* argv[]) {
 
@@ -19,6 +21,18 @@ int main(int argc, char* argv[]) {
 
     // Initialize SDL
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0) { return 1; } atexit(SDL_Quit);
+
+    // Initialize SDL Mixer
+    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096) < 0) {
+        Logger::Critical("Could not initialize SDL Mixer");
+        return 2;
+    }
+
+    // Initialize SDL Image
+    if (IMG_Init(IMG_INIT_PNG) < 0) {
+        Logger::Critical("Could not initialize SDL Image");
+        return 3;
+    }
 
     // Initialize main window and renderer
     SDL_Window* mainGameWindow = SDL_CreateWindow("Warptex", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, !SDL_WINDOW_RESIZABLE);
