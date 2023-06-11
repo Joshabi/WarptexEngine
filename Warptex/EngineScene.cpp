@@ -5,9 +5,19 @@
 #include "EngineScene.h"
 #include "Logger.h"
 
+GameObject* testObject;
+
 // Deconstructor
 Scene::~Scene() {
 	// Clean-up scene, de-activated stuff
+}
+
+void Scene::RegisterGameObject(GameObject* obj) {
+	sceneObjects.push_back(obj);
+}
+
+void Scene::DeregisterGameObject(GameObject* obj) {
+	sceneObjects.erase(std::remove(sceneObjects.begin(), sceneObjects.end(), obj), sceneObjects.end());
 }
 
 void Scene::SetActive(bool state) {
@@ -17,6 +27,10 @@ void Scene::SetActive(bool state) {
 void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameRenderer = renderer;
 	gameWindow = window;
+
+	// Testing Purposes
+	testObject = new GameObject(this, "./Assets/Artwork/Player.png");
+	RegisterGameObject(testObject);
 }
 
 void Scene::Main() {
@@ -52,6 +66,13 @@ void Scene::Update() { }
 void Scene::Render() {
 	// Clear Renderer
 	SDL_RenderClear(gameRenderer);
+
+	// Render Objects
+	for (int i = 0; i < sceneObjects.size(); i++) {
+		sceneObjects[i]->Render();
+	}
+
+	// Present Renderer
 	SDL_RenderPresent(gameRenderer);
 }
 
