@@ -1,9 +1,7 @@
 #pragma once
 
 // *************************************************** //
-//  Handles the music and sound effects for the game,  //
-//  made a singleton for access                        //
-//  Handles rendering, input and updating GameObjects. //
+//  Handles the music and sound effects for the engine //
 // *************************************************** //
 
 // Includes:
