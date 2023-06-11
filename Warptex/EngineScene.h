@@ -13,6 +13,8 @@
 #include "Timer.h"
 #include "Gameobject.h"
 
+#define MAX_KEYS (512)
+
 // Requires GameObject Compiled
 class GameObject;
 
@@ -27,6 +29,7 @@ public:
 	void DeregisterGameObject(GameObject* obj);
 
 	void SetActive(bool state);
+	Timer* Time() { return &mainTimer; }
 	void Init(SDL_Renderer* renderer, SDL_Window* _window);
 	void Main();
 	void Input();
@@ -37,6 +40,8 @@ public:
 private:
 	SDL_Window* gameWindow;
 	SDL_Renderer* gameRenderer;
+	bool gKeys[MAX_KEYS];
+
 	Timer mainTimer;
 	std::vector<GameObject*> sceneObjects;
 	

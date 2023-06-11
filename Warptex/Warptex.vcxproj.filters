@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{bfc2f3b3-dbfc-4998-853c-16ce8584a0a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Core\GameObjects">
+      <UniqueIdentifier>{0e715e5f-b5f1-4e5b-91f9-6cb620e7cf84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Warptex.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="AudioHandler.cpp">
       <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Core\GameObjects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="AudioHandler.h">
       <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Core\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

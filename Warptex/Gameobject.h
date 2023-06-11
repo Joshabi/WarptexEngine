@@ -14,9 +14,9 @@ public:
 	GameObject(Scene* scene, std::string texturePath);
 	~GameObject();
 
-	void Input();
-	void Update();
-	void Render();
+	virtual void Input(int key, bool isPressed);
+	virtual void Update();
+	virtual void Render();
 
 	Sprite& GetSprite() { return *sprite; }
 	Transform& GetTransform() { return *transform; }

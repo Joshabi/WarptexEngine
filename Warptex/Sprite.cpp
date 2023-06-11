@@ -1,6 +1,7 @@
 // Includes:
 #include "Sprite.h"
 #include "Logger.h"
+#include "Vector2D.h"
 
 // Constructor
 Sprite::Sprite(SDL_Renderer* renderer, std::string texturePath) {
@@ -14,7 +15,7 @@ Sprite::Sprite(SDL_Renderer* renderer, std::string texturePath) {
 
 	// Default size and position assignment
 	Resize(16, 16);
-	SetPosition(128, 256);
+	SetPosition(Vector2D(128,256));
 }
 
 // Deconstructor
@@ -26,8 +27,8 @@ void Sprite::Render(SDL_Renderer* renderer) {
 	SDL_RenderCopy(renderer, tex, NULL, &tRect);
 }
 
-void Sprite::SetPosition(int x, int y) {
-	tRect.x = x; tRect.y = y;
+void Sprite::SetPosition(Vector2D position) {
+	tRect.x = position.X; tRect.y = position.Y;
 }
 
 void Sprite::Resize(int w, int h) {

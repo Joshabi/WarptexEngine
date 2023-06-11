@@ -6,6 +6,7 @@ GameObject::GameObject() {
 	sprite == nullptr;
 	renderer == nullptr;
 	scene == nullptr;
+	transform = new Transform();
 }
 
 // Constructor with texture
@@ -13,6 +14,7 @@ GameObject::GameObject(Scene* scene, std::string texturePath) {
 	this->scene = scene;
 	renderer = this->scene->GetRenderer();
 	sprite = new Sprite(renderer, texturePath);
+	transform = new Transform();
 }
 
 GameObject::~GameObject() {
@@ -20,7 +22,7 @@ GameObject::~GameObject() {
 	sprite->~Sprite();
 }
 
-void GameObject::Input() {
+void GameObject::Input(int key, bool isPressed) {
 	
 }
 

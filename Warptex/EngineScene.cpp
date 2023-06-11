@@ -5,8 +5,9 @@
 #include "EngineScene.h"
 #include "Logger.h"
 #include "AudioHandler.h"
+#include "Player.h"
 
-GameObject* testObject;
+Player* testObject;
 
 // Deconstructor
 Scene::~Scene() {
@@ -30,7 +31,7 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameWindow = window;
 
 	// Testing Purposes: GameObjects
-	testObject = new GameObject(this, "./Assets/Artwork/Player.png");
+	testObject = new Player(this);
 	RegisterGameObject(testObject);
 
 	// Testing purposes: Audio
@@ -62,11 +63,23 @@ void Scene::Input() {
 		switch (e.type) {
 		case SDL_QUIT:
 			SDL_Quit();
+			break;
+		case SDL_KEYDOWN:
+			if (e.key.keysym.sym > MAX_KEYS) { break; }
+			gKeys[e.key.keysym.sym] = true;
+			break;
+		case SDL_KEYUP:
+			if (e.key.keysym.sym > MAX_KEYS) { break; }
+			gKeys[e.key.keysym.sym] = false;
+			break;
 		}
+	}
 
-		// Handle GameObject inputs
-		for (int i = 0; i < sceneObjects.size(); i++) {
-			sceneObjects[i]->Input();
+	// Handle GameObject inputs
+	for (int i = 0; i < sceneObjects.size(); i++) {
+		// For each key:
+		for (int key = 0; key < MAX_KEYS; key++) {
+			sceneObjects[i]->Input(key, gKeys[key]);
 		}
 	}
 }

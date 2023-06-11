@@ -7,9 +7,10 @@
 // ******************************** //
 
 // Includes:
+#include <string>
 #include "SDL.h"
 #include "SDL_image.h"
-#include <string>
+#include "Vector2D.h"
 
 class Sprite {
 public:
@@ -17,7 +18,7 @@ public:
 	~Sprite();
 
 	void Render(SDL_Renderer* renderer);
-	void SetPosition(int x, int y);  // Set via coords
+	void SetPosition(Vector2D position);  // Set via coords
 	void Resize(int w, int h); // Set via width and height
 
 private:
