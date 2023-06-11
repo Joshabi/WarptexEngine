@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioHandler.cpp" />
     <ClCompile Include="EngineScene.cpp" />
     <ClCompile Include="Gameobject.cpp" />
     <ClCompile Include="Sprite.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="Warptex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioHandler.h" />
     <ClInclude Include="EngineScene.h" />
     <ClInclude Include="Gameobject.h" />
     <ClInclude Include="Logger.h" />

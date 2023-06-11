@@ -1,6 +1,6 @@
 // Includes:
 #include "Sprite.h"
-#include "logger.h"
+#include "Logger.h"
 
 // Constructor
 Sprite::Sprite(SDL_Renderer* renderer, std::string texturePath) {

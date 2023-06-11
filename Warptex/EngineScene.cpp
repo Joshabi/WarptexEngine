@@ -4,6 +4,7 @@
 #include "SDL.h"
 #include "EngineScene.h"
 #include "Logger.h"
+#include "AudioHandler.h"
 
 GameObject* testObject;
 
@@ -28,9 +29,12 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameRenderer = renderer;
 	gameWindow = window;
 
-	// Testing Purposes
+	// Testing Purposes: GameObjects
 	testObject = new GameObject(this, "./Assets/Artwork/Player.png");
 	RegisterGameObject(testObject);
+
+	// Testing purposes: Audio
+	AudioHandler::Inst().PlaySound(0);
 }
 
 void Scene::Main() {
