@@ -12,6 +12,7 @@ class GameObject {
 public:
 	GameObject();
 	GameObject(Scene* scene, std::string texturePath);
+	~GameObject();
 
 	void Input();
 	void Update();

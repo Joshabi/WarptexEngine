@@ -15,6 +15,11 @@ GameObject::GameObject(Scene* scene, std::string texturePath) {
 	sprite = new Sprite(renderer, texturePath);
 }
 
+GameObject::~GameObject() {
+	transform->~Transform();
+	sprite->~Sprite();
+}
+
 void GameObject::Input() {
 	
 }

@@ -54,14 +54,25 @@ void Scene::Main() {
 void Scene::Input() {
 	SDL_Event e;
 	while (SDL_PollEvent(&e)) {
+		// Handle the cases for Scene Keybinds
 		switch (e.type) {
 		case SDL_QUIT:
 			SDL_Quit();
 		}
+
+		// Handle GameObject inputs
+		for (int i = 0; i < sceneObjects.size(); i++) {
+			sceneObjects[i]->Input();
+		}
 	}
 }
 
-void Scene::Update() { }
+void Scene::Update() {
+	// Handle GameObject updates
+	for (int i = 0; i < sceneObjects.size(); i++) {
+		sceneObjects[i]->Update();
+	}
+}
 
 void Scene::Render() {
 	// Clear Renderer
