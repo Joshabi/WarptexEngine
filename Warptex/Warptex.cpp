@@ -1,21 +1,26 @@
-// Warptex.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// ************************************************************ //
+//				Warptex: Bullet Hell C++ SDL Game               //
+//     The goal of this, is a full functional, scriptable via   //
+//     external JSON data, bullet hell game system. This        //
+//     project is currently from the ground up the old systems  //
+//     and I would like to implement a multiple game window     //
+//     gimmick.        By Joshua Wright                         //
+// ************************************************************ //
 
+// Includes:
 #include <SDL.h>
 #include <iostream>
+#include "Logger.h"
 
 int main(int argc, char* argv[]) {
-    std::cout << "Success";
-    return 0;
+
+    Logger::SetPriority(LogPriority::Info);
+    Logger::Info("Engine Started");
+
+    // Initialize SDL
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) { return 1; } atexit(SDL_Quit);
+
+    // Initialize main window and renderer
+    SDL_Window* mainGameWindow = SDL_CreateWindow("Warptex", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, !SDL_WINDOW_RESIZABLE);
+    SDL_Renderer* mainRenderer = SDL_CreateRenderer(mainGameWindow, -1, SDL_RENDERER_ACCELERATED);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
