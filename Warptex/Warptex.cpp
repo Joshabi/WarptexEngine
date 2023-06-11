@@ -8,11 +8,14 @@
 // ************************************************************ //
 
 // Includes:
-#include <SDL.h>
 #include <iostream>
+#include <SDL.h>
 #include "Logger.h"
 #include "SDL_mixer.h"
 #include "SDL_image.h"
+#include "EngineScene.h"
+
+Scene scene;
 
 int main(int argc, char* argv[]) {
 
@@ -37,4 +40,8 @@ int main(int argc, char* argv[]) {
     // Initialize main window and renderer
     SDL_Window* mainGameWindow = SDL_CreateWindow("Warptex", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, !SDL_WINDOW_RESIZABLE);
     SDL_Renderer* mainRenderer = SDL_CreateRenderer(mainGameWindow, -1, SDL_RENDERER_ACCELERATED);
+
+    scene.Init(mainRenderer, mainGameWindow);
+    scene.SetActive(true);
+    scene.Main();
 }

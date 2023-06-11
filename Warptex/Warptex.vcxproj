@@ -133,10 +133,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EngineScene.cpp" />
+    <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Warptex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EngineScene.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
