@@ -17,6 +17,8 @@ public:
 	Sprite(SDL_Renderer* renderer, std::string texturePath);
 	~Sprite();
 
+	SDL_Rect GetRect() { return tRect; }
+
 	void Render(SDL_Renderer* renderer);
 	void SetPosition(Vector2D position);  // Set via coords
 	void Resize(int w, int h); // Set via width and height

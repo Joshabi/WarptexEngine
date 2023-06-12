@@ -27,6 +27,7 @@ public:
 
 	void RegisterGameObject(GameObject* obj);
 	void DeregisterGameObject(GameObject* obj);
+	std::vector<GameObject*> GetAllGameObjects() { return sceneObjects; }
 
 	void SetActive(bool state);
 	Timer* Time() { return &mainTimer; }

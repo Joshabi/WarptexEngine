@@ -33,6 +33,7 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	// Testing Purposes: GameObjects
 	testObject = new Player(this);
 	RegisterGameObject(testObject);
+	testObject->GetTransform().SetPosition(392, 600);
 
 	// Testing purposes: Audio
 	AudioHandler::Inst().PlaySound(0);

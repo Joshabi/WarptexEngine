@@ -45,6 +45,9 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\Core\GameObjects</Filter>
     </ClCompile>
+    <ClCompile Include="CollisionHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logger.h">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Source Files\Core\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionHandler.h">
+      <Filter>Source Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

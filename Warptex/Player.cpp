@@ -4,6 +4,9 @@
 
 Player::Player(Scene* scene) : GameObject(scene,"./Assets/Artwork/Player.png") {
 	Logger::Info("Player Created");
+	objectTag = Tag::PLAYER;
+	lives = 3;
+	dead = false;
 }
 
 Player::~Player() {
