@@ -12,6 +12,7 @@ public:
 
 	void Input(int key, bool isPressed);
 	void Update();
+	void Collision();
 	void HandleMovement();
 
 private:

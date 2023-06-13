@@ -31,6 +31,26 @@ void Player::Update() {
 	sprite->SetPosition(transform->position);
 }
 
+void Player::Collision() {
+	// Call base implementation
+	GameObject::Collision();
+
+	// Based on current collisions, do:
+	std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
+	for (int j = 0; j < collisions.size(); j++) {
+		switch (collisions[j]->GetTag()) {
+		case Tag::ENEMY_PROJ:
+			// What to do when hit by enemy proj
+			Logger::Info("Player %i collided with projectile %i", this, collision);
+			break;
+		case Tag::ENEMY:
+			// What to do when hit by enemy
+			Logger::Info("Player %i collided with enemy %i", this, collision);
+			break;
+		}
+	}
+}
+
 void Player::HandleMovement() {
 	// Translate position based on velocity;
 	transform->Translate(transform->velocity);
