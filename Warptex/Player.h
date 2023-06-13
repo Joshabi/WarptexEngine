@@ -5,7 +5,7 @@
 
 class Player : public GameObject {
 public:
-	Player(Scene* scene);
+	Player(Scene* scene, int initX = 0, int initY = 0);
 	~Player();
 
 	int GetLives() { return lives; }

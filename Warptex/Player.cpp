@@ -2,11 +2,13 @@
 #include "Player.h"
 #include "Logger.h"
 
-Player::Player(Scene* scene) : GameObject(scene,"./Assets/Artwork/Player.png") {
+Player::Player(Scene* scene, int initX, int initY) : GameObject(scene,"./Assets/Artwork/Player.png") {
 	Logger::Info("Player Created");
+	transform->SetPosition(initX, initY);
+	sprite->SetPosition(transform->position);
 	objectTag = Tag::PLAYER;
-	lives = 3;
-	dead = false;
+	lives = 3; dead = false;
+	MOVE_UP = false; MOVE_DOWN = false; MOVE_LEFT = false; MOVE_RIGHT = false;
 }
 
 Player::~Player() {

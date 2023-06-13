@@ -38,9 +38,8 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	testObject->GetTransform().SetPosition(392, 600);
 
 	// Testing Purposes: Projectiles and Collisions
-	testProj = new Projectile(this, 1, 1, 2, 0);
+	testProj = new Projectile(this, 392, 450, 1, 1, 2, 0);
 	RegisterGameObject(testProj);
-	testProj->GetTransform().SetPosition(392, 450);
 
 	// Testing purposes: Audio
 	AudioHandler::Inst().PlaySound(0);

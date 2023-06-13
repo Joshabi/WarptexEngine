@@ -15,7 +15,6 @@ Sprite::Sprite(SDL_Renderer* renderer, std::string texturePath) {
 
 	// Default size and position assignment
 	Resize(16, 16);
-	SetPosition(Vector2D(128,256));
 }
 
 // Deconstructor

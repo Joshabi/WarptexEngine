@@ -4,8 +4,10 @@
 #include "Projectile.h"
 #include "Logger.h"
 
-Projectile::Projectile(Scene* scene, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, "./Assets/Artwork/Projectile.png") {
+Projectile::Projectile(Scene* scene, float xPos, float yPos, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, "./Assets/Artwork/Projectile.png") {
 	transform->SetVelocity(xVel, yVel);
+	transform->SetPosition(xPos, yPos);
+	sprite->SetPosition(transform->position);
 	objectTag = Tag::ENEMY_PROJ;
 	this->speed = speed;
 	this->accelRate = accelRate;

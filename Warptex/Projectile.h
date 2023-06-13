@@ -5,7 +5,7 @@
 
 class Projectile : public GameObject {
 public:
-	Projectile(Scene* scene, float xVel, float yVel, float speed = 1.0f, float accelRate = 0.0f);
+	Projectile(Scene* scene, float xPos, float yPos, float xVel = 0.0f, float yVel = 0.0f, float speed = 1.0f, float accelRate = 1.0f);
 	~Projectile();
 
 	void Update();
