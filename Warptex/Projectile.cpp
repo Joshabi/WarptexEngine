@@ -11,6 +11,7 @@ Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel,
 	sprite->SetPosition(transform->position);
 	sprite->Resize(12, 12);
 	objectTag = Tag::ENEMY_PROJ;
+	colLayer = CollisionLayer::PROJECTILE;
 	this->speed = speed;
 	this->accelRate = accelRate;
 }

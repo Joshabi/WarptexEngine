@@ -8,13 +8,22 @@
 
 // Gameobject Tags
 enum class Tag {
-	PLAYER = 0,
-	OBSTACLE = 1,
+	DEFAULT = 0,
+	PLAYER = 1,
+	OBSTACLE = 2,
+	ENEMY = 3,
+	FRIENDLY_PROJ = 4,
+	ENEMY_PROJ = 5,
+	COLLECTIBLE = 6
+};
+
+// Gameobject Collision Layers
+enum class CollisionLayer {
+	DEFAULT = 0,
+	PLAYER = 1,
 	ENEMY = 2,
-	FRIENDLY_PROJ = 3,
-	ENEMY_PROJ = 4,
-	COLLECTIBLE = 5,
-	VOID = 99
+	PROJECTILE = 3,
+	OBSTACLE = 4
 };
 
 // Requires Scene Compiled
@@ -36,6 +45,7 @@ public:
 	Transform& GetTransform() { return *transform; }
 	Tag GetTag() { return objectTag; }
 	void SetTag(Tag tag) { objectTag = tag; }
+	CollisionLayer GetColLayer() { return colLayer; }
 	bool IsOutOfBounds();
 
 protected:
@@ -43,7 +53,8 @@ protected:
 	Scene* scene;
 
 	// Generic Component Aspects
-	Tag objectTag = Tag::VOID;
+	Tag objectTag = Tag::DEFAULT;
+	CollisionLayer colLayer = CollisionLayer::DEFAULT;
 	Sprite* sprite;
 	Transform* transform;
 	CollisionHandler* collision;

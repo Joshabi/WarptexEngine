@@ -8,6 +8,7 @@ Player::Player(Scene* scene, int initX, int initY) : GameObject(scene,"./Assets/
 	transform->SetPosition(initX, initY);
 	sprite->SetPosition(transform->position);
 	objectTag = Tag::PLAYER;
+	colLayer = CollisionLayer::PLAYER;
 	lives = 3; dead = false;
 	MOVE_UP = false; MOVE_DOWN = false; MOVE_LEFT = false; MOVE_RIGHT = false;
 }
