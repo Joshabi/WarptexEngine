@@ -10,9 +10,9 @@ class GameObject;
 class CollisionHandler {
 public:
 	CollisionHandler(GameObject* parent);
+	~CollisionHandler();
 	std::vector<GameObject*> GetCollisions();
 	
-
 	// Returns all collisions of a type that inherits from GameObject
 	template<typename T>
 	std::vector<T*> GetCollisionsOfType() {

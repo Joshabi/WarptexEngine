@@ -6,8 +6,10 @@
 #include "Logger.h"
 #include "AudioHandler.h"
 #include "Player.h"
+#include "Projectile.h"
 
 Player* testObject;
+Projectile* testProj;
 
 // Deconstructor
 Scene::~Scene() {
@@ -34,6 +36,11 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	testObject = new Player(this);
 	RegisterGameObject(testObject);
 	testObject->GetTransform().SetPosition(392, 600);
+
+	// Testing Purposes: Projectiles and Collisions
+	testProj = new Projectile(this, 1, 1, 2, 0);
+	RegisterGameObject(testProj);
+	testProj->GetTransform().SetPosition(392, 450);
 
 	// Testing purposes: Audio
 	AudioHandler::Inst().PlaySound(0);

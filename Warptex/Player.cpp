@@ -27,6 +27,9 @@ void Player::Update() {
 	// Move Player
 	HandleMovement();
 
+	// Handle Collision
+	Collision();
+
 	// Update SpritePosition
 	sprite->SetPosition(transform->position);
 }
@@ -37,10 +40,15 @@ void Player::Collision() {
 
 	// Based on current collisions, do:
 	std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
+	std::vector<GameObject*> objectsToRemove;
 	for (int j = 0; j < collisions.size(); j++) {
 		switch (collisions[j]->GetTag()) {
 		case Tag::ENEMY_PROJ:
 			// What to do when hit by enemy proj
+			if (!dead) {
+				collisions[j]->~GameObject();
+				objectsToRemove.push_back(collisions[j]);
+			}
 			Logger::Info("Player %i collided with projectile %i", this, collision);
 			break;
 		case Tag::ENEMY:

@@ -48,6 +48,9 @@
     <ClCompile Include="CollisionHandler.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Source Files\Core\GameObjects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logger.h">
@@ -79,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="CollisionHandler.h">
       <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Source Files\Core\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

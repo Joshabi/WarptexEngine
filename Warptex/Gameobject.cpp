@@ -16,11 +16,17 @@ GameObject::GameObject(Scene* scene, std::string texturePath) {
 	renderer = this->scene->GetRenderer();
 	sprite = new Sprite(renderer, texturePath);
 	transform = new Transform();
+	collision = new CollisionHandler(this);
 }
 
 GameObject::~GameObject() {
-	transform->~Transform();
-	sprite->~Sprite();
+	delete transform;
+	delete sprite;
+	delete collision;
+	transform = nullptr;
+	sprite = nullptr;
+	collision = nullptr;
+	scene->DeregisterGameObject(this);
 }
 
 void GameObject::Input(int key, bool isPressed) {
@@ -43,4 +49,11 @@ void GameObject::Collision() {
 	if (scene != nullptr) {
 		collision->UpdateCollisions(scene->GetAllGameObjects());
 	}
+}
+
+bool GameObject::IsOutOfBounds() {
+	if (scene == nullptr) return false;
+	if (transform == nullptr) return false;
+	SDL_Surface* surface = SDL_GetWindowSurface(scene->GetWindow());
+	return (transform->position.X > surface->w || transform->position.Y > surface->h);
 }

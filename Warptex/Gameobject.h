@@ -36,6 +36,7 @@ public:
 	Transform& GetTransform() { return *transform; }
 	Tag GetTag() { return objectTag; }
 	void SetTag(Tag tag) { objectTag = tag; }
+	bool IsOutOfBounds();
 
 protected:
 	SDL_Renderer* renderer;
