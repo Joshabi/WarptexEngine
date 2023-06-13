@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Core\GameObjects">
       <UniqueIdentifier>{0e715e5f-b5f1-4e5b-91f9-6cb620e7cf84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Core\Structures">
+      <UniqueIdentifier>{9b1d73e2-2feb-4dce-b343-4dd3b3ce3fe8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Warptex.cpp">
@@ -49,6 +52,9 @@
       <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Projectile.cpp">
+      <Filter>Source Files\Core\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="RadialSpawner.cpp">
       <Filter>Source Files\Core\GameObjects</Filter>
     </ClCompile>
   </ItemGroup>
@@ -84,6 +90,12 @@
       <Filter>Source Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Projectile.h">
+      <Filter>Source Files\Core\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="RadialPattern.h">
+      <Filter>Source Files\Core\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="RadialSpawner.h">
       <Filter>Source Files\Core\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>

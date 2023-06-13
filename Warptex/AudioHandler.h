@@ -9,7 +9,8 @@
 #include "SDL_mixer.h"
 #include "Gameobject.h"
 
-constexpr auto TEST_SOUND_EFFECT = "./Assets/Audio/Sounds/Test.wav";
+constexpr auto PLAYER_HIT = "./Assets/Audio/Sounds/Player_Hit.wav";
+constexpr auto PROJ_FIRED = "./Assets/Audio/Sounds/Projectile_Fire.wav";
 
 class AudioHandler {
 public:

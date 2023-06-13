@@ -1,6 +1,7 @@
 // Includes:
 #include "Player.h"
 #include "Logger.h"
+#include "AudioHandler.h"
 
 Player::Player(Scene* scene, int initX, int initY) : GameObject(scene,"./Assets/Artwork/Player.png") {
 	Logger::Info("Player Created");
@@ -12,7 +13,7 @@ Player::Player(Scene* scene, int initX, int initY) : GameObject(scene,"./Assets/
 }
 
 Player::~Player() {
-
+	
 }
 
 void Player::Input(int key, bool pressed) {
@@ -52,6 +53,7 @@ void Player::Collision() {
 				objectsToRemove.push_back(collisions[j]);
 			}
 			Logger::Info("Player %i collided with projectile %i", this, collision);
+			AudioHandler::Inst().PlaySound(1);
 			break;
 		case Tag::ENEMY:
 			// What to do when hit by enemy

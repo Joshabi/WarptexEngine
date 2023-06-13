@@ -22,8 +22,8 @@ public:
 	Vector2D scale = Vector2D(0, 0);
 	float rotation = 0;
 
-	void SetScale(int x, int y) { scale.X = x; scale.Y = y; }
-	void SetPosition(int x, int y) { position.X = x; position.Y = y; }
-	void SetVelocity(int x, int y) { velocity.X = x; velocity.Y = y; }
+	void SetScale(float x, float y) { scale.X = x; scale.Y = y; }
+	void SetPosition(float x, float y) { position.X = x; position.Y = y; }
+	void SetVelocity(float x, float y) { velocity.X = x; velocity.Y = y; }
 	inline void Translate(Vector2D moveVector) { position.X += moveVector.X; position.Y += moveVector.Y; }
 };

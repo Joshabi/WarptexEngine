@@ -7,9 +7,12 @@
 #include "AudioHandler.h"
 #include "Player.h"
 #include "Projectile.h"
+#include "RadialSpawner.h"
 
 Player* testObject;
 Projectile* testProj;
+RadialSpawner* spawner;
+RadialPattern pattern;
 
 // Deconstructor
 Scene::~Scene() {
@@ -38,11 +41,18 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	testObject->GetTransform().SetPosition(392, 600);
 
 	// Testing Purposes: Projectiles and Collisions
-	testProj = new Projectile(this, 392, 450, 1, 1, 2, 0);
-	RegisterGameObject(testProj);
+	//testProj = new Projectile(this, 392, 450, 1, 1, 2, 0);
+	//RegisterGameObject(testProj);
 
-	// Testing purposes: Audio
-	AudioHandler::Inst().PlaySound(0);
+	// Testing Purposes: Radial Pattern Spawner
+	spawner = new RadialSpawner(this, 392, 200);
+	RegisterGameObject(spawner);
+
+	pattern = RadialPattern();
+	pattern.projFireRate = 0.075;
+
+	spawner->ChangePattern(pattern);
+	spawner->SetActive(true);
 }
 
 void Scene::Main() {

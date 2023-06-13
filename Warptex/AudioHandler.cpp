@@ -59,5 +59,6 @@ AudioHandler::~AudioHandler() {
 }
 
 AudioHandler::AudioHandler() {
-	LoadSound(TEST_SOUND_EFFECT);
+	LoadSound(PROJ_FIRED);
+	LoadSound(PLAYER_HIT);
 }
