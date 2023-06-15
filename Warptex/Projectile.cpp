@@ -4,15 +4,25 @@
 #include "Projectile.h"
 #include "Logger.h"
 
-Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, 1) {
-	transform->SetVelocity(xVel, yVel);
-	transform->SetPosition(xPos, yPos);
+Projectile::Projectile(Scene* scene) : GameObject(scene, 1) {
+	Initialize(0, 0, 0, 0, 0, 0);
 	sprite->SetPosition(transform->position);
 	sprite->Resize(12, 12);
 	objectTag = Tag::ENEMY_PROJ;
 	colLayer = CollisionLayer::PROJECTILE;
-	this->topMoveSpeed = speed;
+}
+
+void Projectile::Initialize(int xPos, int yPos, float xVel, float yVel, float speed, float accelRate)
+{
+	transform->SetVelocity(xVel, yVel);
+	transform->SetPosition(xPos, yPos);
 	this->accelRate = accelRate;
+
+	if (accelRate == 0) { moveSpeed = speed; }
+	else {
+		this->topMoveSpeed = speed;
+		moveSpeed = 0;
+	}
 }
 
 Projectile::~Projectile() {
@@ -30,7 +40,7 @@ void Projectile::Update() {
 	sprite->SetPosition(transform->position);
 
 	// Out of bounds check, if so delete
-	if (IsOutOfBounds()) { delete this; }
+	if (IsOutOfBounds()) { SetActive(false); }
 }
 
 void Projectile::Collision() {
@@ -38,15 +48,11 @@ void Projectile::Collision() {
 	GameObject::Collision();
 
 	// Based on current collisions, do:
-	std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
-	for (int j = 0; j < collisions.size(); j++) {
-		switch (collisions[j]->GetTag()) {
-		case Tag::PLAYER:
-			// What to do when hit by enemy proj
-			Logger::Info("Projectile %i collided with player", this);
-			break;
-		}
-	}
+	//std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
+	//for (int j = 0; j < collisions.size(); j++) {
+	//	switch (collisions[j]->GetTag()) {
+    //
+	//}
 }
 
 void Projectile::HandleMovement() {

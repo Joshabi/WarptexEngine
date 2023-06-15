@@ -5,16 +5,18 @@
 
 class Projectile : public GameObject {
 public:
-	Projectile(Scene* scene, int xPos, int yPos, float xVel = 0.0f, float yVel = 0.0f, float speed = 1.0f, float accelRate = 0.0f);
+	Projectile() = default;
+	Projectile(Scene* scene);
 	~Projectile();
 
+	void Initialize(int xPos = 0, int yPos = 0, float xVel = 0, float yVel = 0, float speed = 0, float accelRate = 0.0f);
 	void Update();
 	void Collision();
 	void HandleMovement();
 
 protected:
 	bool bounce = false;  // Should it bounce off arena edges?
-	float topMoveSpeed = 1;          // Movement Speed;
-	float moveSpeed = 0;
-	float accelRate;      // The rate at which the projectile slows down or speeds up over time;
+	float topMoveSpeed = 1;  // Top movement speed;
+	float moveSpeed = 0;   // Actual movement speed;
+	float accelRate;   // The rate at which the projectile slows down or speeds up over time;
 };

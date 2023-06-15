@@ -4,8 +4,9 @@
 #include "Logger.h"
 #include "AudioHandler.h"
 
-RadialSpawner::RadialSpawner(Scene* scene, int initX, int initY) : GameObject(scene, "./Assets/Artwork/Player.png") {
-	//Logger::Info("RadialSpawner Created at: x%i y%i", initX, initY);
+RadialSpawner::RadialSpawner(Scene* scene, int initX, int initY) : GameObject(scene, 0),
+projPool(10, scene) {
+	Logger::Info("RadialSpawner Created at: x%i y%i", initX, initY);
 	transform->SetPosition(initX, initY);
 	sprite->SetPosition(transform->position);
 	objectTag = Tag::ENEMY;
@@ -54,9 +55,9 @@ void RadialSpawner::RunActivePattern() {
 						int posY = transform->position.Y;
 
 						// Make a new projectile
-						Projectile* proj = new Projectile(scene, posX, posY, x, y, currentPattern.projSpeed, currentPattern.projAccel);
-						scene->RegisterGameObject(proj);
-
+						Projectile* proj = projPool.GetObject();
+						proj->Initialize(posX, posY, x, y, currentPattern.projSpeed, currentPattern.projAccel);
+						
 						// Play Sound Effect Later
 						currentAngle += streamAngle;
 					}
@@ -85,5 +86,6 @@ void RadialSpawner::ChangePattern(RadialPattern pattern) {
 }
 
 void RadialSpawner::Update() {
+	CleanupInactiveProjectiles();
 	if (active) { RunActivePattern(); }
 }

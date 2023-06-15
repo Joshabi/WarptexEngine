@@ -2,10 +2,10 @@
 #include "Gameobject.h"
 
 // Empty Constructor
-GameObject::GameObject() {
-	sprite == nullptr;
-	renderer == nullptr;
-	scene == nullptr;
+GameObject::GameObject(Scene* scene) {
+	this->scene = scene;
+	renderer = this->scene->GetRenderer();
+	sprite = new Sprite(renderer, 0);
 	transform = new Transform();
 	collision = new CollisionHandler(this);
 }

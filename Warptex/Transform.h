@@ -14,13 +14,18 @@
 
 class Transform {
 public:
-	Transform() {}
+	Transform() {
+		position = Vector2D(0, 0);
+		velocity = Vector2D(0, 0);
+		scale = Vector2D(0, 0);
+		rotation = 0;
+	}
 	~Transform() {}
 
-	Vector2D position = Vector2D(0,0);
-	Vector2D velocity = Vector2D(0, 0);
-	Vector2D scale = Vector2D(0, 0);
-	float rotation = 0;
+	Vector2D position;
+	Vector2D velocity;
+	Vector2D scale;
+	float rotation;
 
 	void SetScale(float x, float y) { scale.X = x; scale.Y = y; }
 	void SetPosition(float x, float y) { position.X = x; position.Y = y; }

@@ -32,7 +32,7 @@ class CollisionHandler;
 
 class GameObject {
 public:
-	GameObject();
+	GameObject(Scene* scene);
 	GameObject(Scene* scene, std::string texturePath);
 	GameObject(Scene* scene, int texID);
 	~GameObject();
@@ -47,6 +47,8 @@ public:
 	Tag GetTag() { return objectTag; }
 	void SetTag(Tag tag) { objectTag = tag; }
 	CollisionLayer GetColLayer() { return colLayer; }
+	void SetActive(bool state) { isActive = state; }
+	bool IsActive() { return isActive; }
 	bool IsOutOfBounds();
 
 protected:
@@ -59,4 +61,5 @@ protected:
 	Sprite* sprite;
 	Transform* transform;
 	CollisionHandler* collision;
+	bool isActive;
 };

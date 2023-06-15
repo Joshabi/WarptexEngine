@@ -50,7 +50,7 @@ void Player::Collision() {
 		case Tag::ENEMY_PROJ:
 			// What to do when hit by enemy proj
 			if (!dead) {
-				collisions[j]->~GameObject();
+				collisions[j]->SetActive(false);
 				objectsToRemove.push_back(collisions[j]);
 			}
 			Logger::Info("Player %i collided with projectile %i", this, collision);
