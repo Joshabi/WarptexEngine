@@ -15,6 +15,7 @@
 class Sprite {
 public:
 	Sprite(SDL_Renderer* renderer, std::string texturePath);
+	Sprite(SDL_Renderer* renderer, int TexID);
 	~Sprite();
 
 	SDL_Rect GetRect() { return tRect; }
@@ -26,4 +27,5 @@ public:
 private:
 	SDL_Rect tRect;
 	SDL_Texture* tex;
+	bool usingHandler = true;
 };

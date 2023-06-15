@@ -19,6 +19,15 @@ GameObject::GameObject(Scene* scene, std::string texturePath) {
 	collision = new CollisionHandler(this);
 }
 
+GameObject::GameObject(Scene* scene, int texID)
+{
+	this->scene = scene;
+	renderer = this->scene->GetRenderer();
+	sprite = new Sprite(renderer, texID);
+	transform = new Transform();
+	collision = new CollisionHandler(this);
+}
+
 GameObject::~GameObject() {
 	delete transform;
 	delete sprite;

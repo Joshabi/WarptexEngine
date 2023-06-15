@@ -12,20 +12,20 @@ class RadialPattern {
 public:
 	RadialPattern() {}
 
-	float iterations = 3;               // How many times to repeat this pattern
-	int spawnStreamCount = 5;          // How many spawn streams around the circle
+	float iterations = 25;               // How many times to repeat this pattern
+	int spawnStreamCount = 15;          // How many spawn streams around the circle
 	float spawnStreamAngleSpread = 0; // Angle between spawn streams
 	int splitStreamCount = 1;          // How many projectile streams per spawn stream
 	float splitStreamAngleSpread = 0;  // Angle between projectile streams
-	int projectileCount = 25;          // How many projectiles to spawn per stream
+	int projectileCount = 10;          // How many projectiles to spawn per stream
 
 	float startRotation = 0;           // Starting rotation for RadialSpawner
-	float spawnerSpinAngleChange = 12.5f;  // Speed at which it rotates
+	float spawnerSpinAngleChange = 7.5f;  // Speed at which it rotates
 	bool spawnerSpinReverse = false;    // Spin in reverse?
 	bool flipEveryIteration = true;   // Spin in opposite direction each iteration
-	float projFireRate = 0.5f;         // Rate to fire projectiles
-	float projSpeed = 15;               // Speed of projectiles
-	float projAccel = 3;
+	float projFireRate = 0.005f;         // Rate to fire projectiles
+	float projSpeed = 12;               // Speed of projectiles
+	float projAccel = 4;
 	float projLifetime = 0;            // Lifetime of projectiles (only relevant for those not leaving screen "bouncing")
 	bool tethered = false;             // Projectiles positionally tethered to the spawn object?
 };

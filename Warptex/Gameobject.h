@@ -34,6 +34,7 @@ class GameObject {
 public:
 	GameObject();
 	GameObject(Scene* scene, std::string texturePath);
+	GameObject(Scene* scene, int texID);
 	~GameObject();
 
 	virtual void Input(int key, bool isPressed);

@@ -5,6 +5,7 @@
 #include "EngineScene.h"
 #include "Logger.h"
 #include "AudioHandler.h"
+#include "TextureHandler.h"
 #include "Player.h"
 #include "Projectile.h"
 #include "RadialSpawner.h"
@@ -34,6 +35,11 @@ void Scene::SetActive(bool state) {
 void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameRenderer = renderer;
 	gameWindow = window;
+
+	// Initialization Information for Handlers:
+	Logger::Info("Texture Count %i", TextureHandler::Inst(gameRenderer).GameTextures.size());
+	Logger::Info("Sound Count %i", AudioHandler::Inst().SoundEffects.size());
+	Logger::Info("Music Count %i", AudioHandler::Inst().GameMusic.size());
 
 	// Testing Purposes: GameObjects
 	testObject = new Player(this);

@@ -3,7 +3,7 @@
 #include "Logger.h"
 #include "AudioHandler.h"
 
-Player::Player(Scene* scene, int initX, int initY) : GameObject(scene,"./Assets/Artwork/Player.png") {
+Player::Player(Scene* scene, int initX, int initY) : GameObject(scene, 0) {
 	Logger::Info("Player Created");
 	transform->SetPosition(initX, initY);
 	sprite->SetPosition(transform->position);

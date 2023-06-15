@@ -4,7 +4,7 @@
 #include "Projectile.h"
 #include "Logger.h"
 
-Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, "./Assets/Artwork/Projectile.png") {
+Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, 1) {
 	transform->SetVelocity(xVel, yVel);
 	transform->SetPosition(xPos, yPos);
 	sprite->SetPosition(transform->position);

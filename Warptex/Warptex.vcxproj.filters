@@ -57,6 +57,9 @@
     <ClCompile Include="RadialSpawner.cpp">
       <Filter>Source Files\Core\GameObjects</Filter>
     </ClCompile>
+    <ClCompile Include="TextureHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logger.h">
@@ -97,6 +100,9 @@
     </ClInclude>
     <ClInclude Include="RadialSpawner.h">
       <Filter>Source Files\Core\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHandler.h">
+      <Filter>Source Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -141,6 +141,7 @@
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="RadialSpawner.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="TextureHandler.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Warptex.cpp" />
   </ItemGroup>
@@ -155,6 +156,7 @@
     <ClInclude Include="RadialPattern.h" />
     <ClInclude Include="RadialSpawner.h" />
     <ClInclude Include="Sprite.h" />
+    <ClInclude Include="TextureHandler.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2D.h" />
