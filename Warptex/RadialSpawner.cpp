@@ -17,11 +17,11 @@ void RadialSpawner::RunActivePattern() {
 		360.0f / currentPattern.spawnStreamCount :
 		currentPattern.spawnStreamAngleSpread;
 
+	if (currentPattern.spawnerSpinReverse) reversing = true;
+	float currentRotation = currentPattern.startRotation;
+
 	// If iterations are left
 	if (iterationsPassed < currentPattern.iterations) {
-
-		float currentRotation = currentPattern.startRotation;
-		float spawnerSpinDir = currentPattern.spawnerSpinReverse ? -1.0f : 1.0f;
 
 		if (amountFired <= currentPattern.projectileCount) {
 
@@ -29,7 +29,6 @@ void RadialSpawner::RunActivePattern() {
 			if (internalTimer.TicksElapsed() > currentPattern.projFireRate * 60 * 16.6666f) {
 
 				currentRotation += currentPattern.spawnerSpinAngleChange * amountFired;
-				std::cout << currentRotation;
 
 				// Get the stream points
 				for (int streamID = 0; streamID < currentPattern.spawnStreamCount; streamID++) {
@@ -41,6 +40,8 @@ void RadialSpawner::RunActivePattern() {
 
 						// Clamp
 						if (currentAngle > 360) currentAngle -= 360;
+
+						if (reversing) currentAngle = 360 - currentAngle;
 
 						// Convert the angle to radians.
 						double radians = currentAngle * M_PI / 180.0;
@@ -68,6 +69,7 @@ void RadialSpawner::RunActivePattern() {
 		else {
 			amountFired = 0;
 			iterationsPassed += 1;
+			if (currentPattern.flipEveryIteration) { reversing = !reversing; }
 		}
 	}
 	else {

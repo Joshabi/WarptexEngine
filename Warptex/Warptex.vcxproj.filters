@@ -99,4 +99,7 @@
       <Filter>Source Files\Core\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>

@@ -26,7 +26,7 @@ protected:
 	std::vector<RadialPattern> patternQueue = std::vector<RadialPattern>();
 
 	float amountFired = 0;
-	float iterationsPassed = 0;
+	int iterationsPassed = 0;
 	bool reversing = false;
 	bool active = false;
 };

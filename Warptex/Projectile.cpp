@@ -5,7 +5,6 @@
 #include "Logger.h"
 
 Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel, float speed, float accelRate) : GameObject(scene, "./Assets/Artwork/Projectile.png") {
-	Logger::Info("Spawned Projectile at x%i | y%i", xPos, yPos);
 	transform->SetVelocity(xVel, yVel);
 	transform->SetPosition(xPos, yPos);
 	sprite->SetPosition(transform->position);
