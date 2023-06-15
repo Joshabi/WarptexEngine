@@ -9,7 +9,6 @@ Not all features have been ported or refactored yet, so a lot of features are cu
 - Menu Functionality
 
 ### I would like to implement:
-- Generic GameObject Object pooling.
 - Improved collision tag matrix for determining which objects can collide with one-another.
 - Improved collision efficiency by using spatial partitioning techniques.
 - Scheduling system for tasks
