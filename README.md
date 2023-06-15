@@ -1,2 +1,15 @@
-# Warptex
-C++-based Bullet Hell engine written with SDL2, designed to be somewhat flexible and with patterns being configurable via config files in the future. This is a refined port of a project I did in Year 2 of Uni.
+# Warptex Engine
+This was originally a Year 2 University Project that I have since majorly refactored and decided to re-publish.
+It is a basic C++-based SDL2 setup for making Bullet Hell Patterning and Gameplay, designed to be somewhat
+flexible with configurable pattern generation and loading pattern designs from dat files.
+
+Not all features have been ported or refactored yet, so a lot of features are currently missing.
+### Currently reimplementing:
+- Loading Patterns from config files
+- Menu Functionality
+
+### I would like to implement:
+- Generic GameObject Object pooling.
+- Improved collision tag matrix for determining which objects can collide with one-another.
+- Improved collision efficiency by using spatial partitioning techniques.
+- Scheduling system for tasks
