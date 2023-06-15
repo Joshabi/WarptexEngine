@@ -54,7 +54,7 @@ void RadialSpawner::RunActivePattern() {
 						int posY = transform->position.Y;
 
 						// Make a new projectile
-						Projectile* proj = new Projectile(scene, posX, posY, x, y, currentPattern.projSpeed);
+						Projectile* proj = new Projectile(scene, posX, posY, x, y, currentPattern.projSpeed, currentPattern.projAccel);
 						scene->RegisterGameObject(proj);
 
 						// Play Sound Effect Later

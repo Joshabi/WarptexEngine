@@ -5,7 +5,7 @@
 
 class Projectile : public GameObject {
 public:
-	Projectile(Scene* scene, int xPos, int yPos, float xVel = 0.0f, float yVel = 0.0f, float speed = 1.0f, float accelRate = 1.0f);
+	Projectile(Scene* scene, int xPos, int yPos, float xVel = 0.0f, float yVel = 0.0f, float speed = 1.0f, float accelRate = 0.0f);
 	~Projectile();
 
 	void Update();
@@ -14,6 +14,7 @@ public:
 
 protected:
 	bool bounce = false;  // Should it bounce off arena edges?
-	float speed;          // Movement Speed;
+	float topMoveSpeed = 1;          // Movement Speed;
+	float moveSpeed = 0;
 	float accelRate;      // The rate at which the projectile slows down or speeds up over time;
 };

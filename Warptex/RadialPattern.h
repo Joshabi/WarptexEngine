@@ -24,7 +24,8 @@ public:
 	bool spawnerSpinReverse = false;    // Spin in reverse?
 	bool flipEveryIteration = true;   // Spin in opposite direction each iteration
 	float projFireRate = 0.5f;         // Rate to fire projectiles
-	float projSpeed = 2;               // Speed of projectiles
+	float projSpeed = 15;               // Speed of projectiles
+	float projAccel = 3;
 	float projLifetime = 0;            // Lifetime of projectiles (only relevant for those not leaving screen "bouncing")
 	bool tethered = false;             // Projectiles positionally tethered to the spawn object?
 };

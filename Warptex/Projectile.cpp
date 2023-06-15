@@ -11,7 +11,7 @@ Projectile::Projectile(Scene* scene, int xPos, int yPos, float xVel, float yVel,
 	sprite->Resize(12, 12);
 	objectTag = Tag::ENEMY_PROJ;
 	colLayer = CollisionLayer::PROJECTILE;
-	this->speed = speed;
+	this->topMoveSpeed = speed;
 	this->accelRate = accelRate;
 }
 
@@ -50,5 +50,13 @@ void Projectile::Collision() {
 }
 
 void Projectile::HandleMovement() {
-	transform->SetPosition(transform->position.X + (transform->velocity.X * speed), transform->position.Y + (transform->velocity.Y * speed));
+	// If we are using acceleration on this projectile else just set speed = top speed
+	if (accelRate > 0) {
+		moveSpeed += accelRate / 60;
+	}
+	else {
+		moveSpeed = topMoveSpeed;
+	}
+
+	transform->Translate(Vector2D(transform->velocity.X * moveSpeed, transform->velocity.Y * moveSpeed));
 }
