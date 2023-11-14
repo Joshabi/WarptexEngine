@@ -1,6 +1,8 @@
 
 // Includes:
 #include <string>
+#include <iostream>
+#include <fstream>
 #include "SDL.h"
 #include "EngineScene.h"
 #include "Logger.h"
@@ -9,11 +11,11 @@
 #include "Player.h"
 #include "Projectile.h"
 #include "RadialSpawner.h"
+#include "RadialPattern.h"
 
 Player* testObject;
 Projectile* testProj;
 RadialSpawner* spawner;
-RadialPattern pattern;
 
 // Deconstructor
 Scene::~Scene() {
@@ -54,8 +56,25 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	spawner = new RadialSpawner(this, 392, 200);
 	RegisterGameObject(spawner);
 
-	pattern = RadialPattern();
-	pattern.projFireRate = 0.075;
+	// Testing Purposes: Deserializing a Radial Pattern
+	std::ifstream inputFile("Assets/Data/Patterns/PatternTest.json");
+	if (!inputFile.is_open()) {
+		Logger::Error("Failed to open test pattern");
+	}
+	else {
+		Logger::Info("Opened test pattern successfully");
+	}
+
+	nlohmann::json jsonPattern;
+	try {
+		inputFile >> jsonPattern;
+	}
+	catch (nlohmann::json::parse_error& e) {
+		Logger::Error("Failed to parse test pattern");
+	}
+
+	RadialPattern pattern;
+	from_json(jsonPattern, pattern);
 
 	spawner->ChangePattern(pattern);
 	spawner->SetActive(true);

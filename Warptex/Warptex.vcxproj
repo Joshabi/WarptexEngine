@@ -139,6 +139,7 @@
     <ClCompile Include="Gameobject.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="RadialPattern.cpp" />
     <ClCompile Include="RadialSpawner.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TextureHandler.cpp" />

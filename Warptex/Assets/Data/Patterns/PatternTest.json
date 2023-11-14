@@ -1,0 +1,17 @@
+{
+	"iterations": 25,
+	"spawnStreamCount": 4,
+	"spawnStreamAngleSpread": 45,
+	"splitStreamCount": 2,
+	"splitStreamAngleSpread": 22.5,
+	"projectileCount": 32,
+	"startRotation": 0.0,
+	"spawnerSpinAngleChange": 7.5,
+	"spawnerSpinReverse": false,
+	"flipEveryIteration": true,
+	"projFireRate": 0.075,
+	"projSpeed": 0.25,
+	"projAccel": 4.0,
+	"projLifetime": 3.0,
+	"tethered": false
+}

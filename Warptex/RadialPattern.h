@@ -32,3 +32,6 @@ public:
 	float projLifetime = 0;            // Lifetime of projectiles (only relevant for those not leaving screen "bouncing")
 	bool tethered = false;             // Projectiles positionally tethered to the spawn object?
 };
+
+// Declare the from_json function
+void from_json(const nlohmann::json& j, RadialPattern& pattern);

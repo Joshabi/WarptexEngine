@@ -6,6 +6,7 @@
 #include "SDL_events.h"
 #include "Timer.h"
 #include "Gameobject.h"
+#include "nlohmann/json.hpp"
 
 #define MAX_KEYS (512)
 
