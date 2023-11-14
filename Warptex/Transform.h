@@ -1,17 +1,14 @@
 #pragma once
 
-// *********************************************** //
-//  Representation of position and rotation, that  //
-//  can have parent or child objects that tie      //
-//  the movement together                          //
-// *********************************************** //
-
 // Includes:
 #include <vector>
 #include "SDL.h"
 #include "Vector2D.h"
 #include "Gameobject.h"
 
+/// <summary>
+/// Representation of position, rotation, velocity and scale, that can have parent or child objects that tie the objects together
+/// </summary>
 class Transform {
 public:
 	Transform() {

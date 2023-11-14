@@ -8,6 +8,9 @@
 #include <string>
 #include <sstream>
 
+/// <summary>
+/// Represents a bullethell pattern for a RadialSpawner
+/// </summary>
 class RadialPattern {
 public:
 	RadialPattern() {}

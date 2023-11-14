@@ -6,7 +6,9 @@
 #include "Transform.h"
 #include "CollisionHandler.h"
 
-// Gameobject Tags
+/// <summary>
+/// GameObject Tags
+/// </summary>
 enum class Tag {
 	DEFAULT = 0,
 	PLAYER = 1,
@@ -17,7 +19,9 @@ enum class Tag {
 	COLLECTIBLE = 6
 };
 
-// Gameobject Collision Layers
+/// <summary>
+/// GameObject Collision Layers
+/// </summary>
 enum class CollisionLayer {
 	DEFAULT = 0,
 	PLAYER = 1,
@@ -30,6 +34,9 @@ enum class CollisionLayer {
 class Scene;
 class CollisionHandler;
 
+/// <summary>
+/// An object consisting of a sprite, transform, and collision handler to be updated in the scene
+/// </summary>
 class GameObject {
 public:
 	GameObject(Scene* scene);

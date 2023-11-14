@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioHandler.h" />
+    <ClInclude Include="Collision.h" />
     <ClInclude Include="CollisionHandler.h" />
     <ClInclude Include="EngineScene.h" />
     <ClInclude Include="Gameobject.h" />

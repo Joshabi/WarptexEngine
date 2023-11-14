@@ -1,11 +1,5 @@
 #pragma once
 
-// ******************************** //
-//  A base scene with game loop.    //
-//  Handles rendering, input and    //
-//  updating GameObjects.           //
-// ******************************** //
-
 // Includes:
 #include <vector>
 #include "SDL.h"
@@ -18,6 +12,9 @@
 // Requires GameObject Compiled
 class GameObject;
 
+/// <summary>
+/// Base scene with game loop. Handles rendering, input and updating GameObjects.
+/// </summary>
 class Scene {
 public:
 	~Scene();

@@ -1,6 +1,7 @@
 // Includes:
 #include "CollisionHandler.h"
 #include "Gameobject.h"
+#include "Collision.h"
 
 // Constructor
 CollisionHandler::CollisionHandler(GameObject* parent) {
@@ -34,7 +35,7 @@ void CollisionHandler::UpdateCollisions(std::vector<GameObject*> objectsToCheck)
 	for (int i = 0; i < objectsToCheck.size(); i++) {
 		SDL_Rect thisRect = parentObject->GetSprite().GetRect();
 		SDL_Rect otherRect = objectsToCheck[i]->GetSprite().GetRect();
-		bool collision = SDL_HasIntersection(&thisRect, &otherRect);
+		bool collision = Collision::CheckAABBCollision(thisRect, otherRect);
 
 		if (collision) {
 			auto iterator = std::find(currentCollisions.begin(), currentCollisions.end(), objectsToCheck[i]);

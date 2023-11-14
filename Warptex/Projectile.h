@@ -3,6 +3,9 @@
 // Includes:
 #include "Gameobject.h"
 
+/// <summary>
+/// A projectile object that can be fired in a given direction
+/// </summary>
 class Projectile : public GameObject {
 public:
 	Projectile() = default;

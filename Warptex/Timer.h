@@ -9,6 +9,9 @@
 #include <iostream>
 #include "SDL.h"
 
+/// <summary>
+/// Timer class, used to measure time in ticks
+/// </summary>
 class Timer {
 public:
 	Timer();

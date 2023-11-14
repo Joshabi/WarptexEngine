@@ -1,17 +1,14 @@
 #pragma once
 
-// ******************************** //
-//  Component for objects that can  //
-//  allow them to display sprites   //
-//  on the screen via Surfaces.     //
-// ******************************** //
-
 // Includes:
 #include <string>
 #include "SDL.h"
 #include "SDL_image.h"
 #include "Vector2D.h"
 
+/// <summary>
+/// Component that allows an object to display a sprite on the screen
+/// </summary>
 class Sprite {
 public:
 	Sprite(SDL_Renderer* renderer, std::string texturePath);

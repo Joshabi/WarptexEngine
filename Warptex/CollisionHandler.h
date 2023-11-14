@@ -7,13 +7,20 @@
 // Forward References
 class GameObject;
 
+/// <summary>
+/// Handles collisions between the parent object and other objects
+/// </summary>
 class CollisionHandler {
 public:
 	CollisionHandler(GameObject* parent);
 	~CollisionHandler();
 	std::vector<GameObject*> GetCollisions();
 	
-	// Returns all collisions of a type that inherits from GameObject
+	/// <summary>
+	/// Returns all collisions where the colliding object is of type T
+	/// </summary>
+	/// <typeparam name="T"></typeparam>
+	/// <returns></returns>
 	template<typename T>
 	std::vector<T*> GetCollisionsOfType() {
 		std::vector<T*> collisions;

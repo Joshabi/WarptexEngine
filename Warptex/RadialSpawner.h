@@ -1,15 +1,14 @@
 #pragma once
 
-// ********************************************************* //
-//  Radial spawner that uses a pattern to spawn projectiles  //
-// ********************************************************* //
-
 // Includes:
 #include "Gameobject.h"
 #include "RadialPattern.h"
 #include "ObjectPool.h"
 #include "Logger.h"
 
+/// <summary>
+/// Spawns RadialPatterns of projectiles at a given interval and position in the scene
+/// </summary>
 class RadialSpawner : public GameObject {
 public:
 	RadialSpawner(Scene* scene, int initX = 0, int initY = 0);

@@ -107,6 +107,9 @@
     <ClInclude Include="ObjectPool.h">
       <Filter>Source Files\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

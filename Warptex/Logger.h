@@ -10,14 +10,24 @@
 #include <iostream>
 #include <chrono>
 
+/// <summary>
+/// Represents the priority of a log message
+/// </summary>
 enum LogPriority {
 	Info, Warning, Error, Critical
 };
 
+/// <summary>
+/// Logger class, handles logging events
+/// </summary>
 class Logger {
 public:
 	LogPriority lowestLogPriority = LogPriority::Info;
 
+	/// <summary>
+	/// Sets the current priority of the logger
+	/// </summary>
+	/// <param name="p"></param>
 	static void SetPriority(LogPriority p) {
 		Inst().lowestLogPriority = p;
 	}
@@ -45,13 +55,22 @@ public:
 private:
 	Logger() {}
 
-	// Singleton Pattern, returns Logger
+	/// <summary>
+	/// Returns static primary instance of Logger
+	/// </summary>
+	/// <returns></returns>
 	static Logger& Inst() {
 		static Logger logger;
 		return logger;
 	}
 
-	// Logs a given message
+	/// <summary>
+	/// Logs a given message to the console
+	/// </summary>
+	/// <param name="loggerMessage">- Pre-message formatting</param>
+	/// <param name="msgPriority">- Priority of the message</param>
+	/// <param name="message">- Message contents</param>
+	/// <param name="...args"></param>
 	template<typename... Args>
 	void Log(const char* loggerMessage, LogPriority msgPriority, const char* message, Args... args) {
 		if (Inst().lowestLogPriority <= msgPriority) {

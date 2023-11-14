@@ -1,9 +1,5 @@
 #pragma once
 
-// *************************************************** //
-//  Handles the music and sound effects for the engine //
-// *************************************************** //
-
 // Includes:
 #include <map>
 #include <string>
@@ -12,6 +8,9 @@
 constexpr auto PLAYER_HIT = "./Assets/Audio/Sounds/Player_Hit.wav";
 constexpr auto PROJ_FIRED = "./Assets/Audio/Sounds/Projectile_Fire.wav";
 
+/// <summary>
+/// Handles the music and sound effects for the engine
+/// </summary>
 class AudioHandler {
 public:
 	static AudioHandler& Inst() {

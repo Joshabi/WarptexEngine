@@ -3,6 +3,9 @@
 // Includes:
 #include "Gameobject.h"
 
+/// <summary>
+/// Primary player gameobject class
+/// </summary>
 class Player : public GameObject {
 public:
 	Player(Scene* scene, int initX = 0, int initY = 0);
