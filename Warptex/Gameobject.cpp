@@ -53,23 +53,31 @@ void GameObject::Render() {
 }
 
 void GameObject::Collision() {
-	// Hard coded Solution for now:
-	// - Stops projectiles collision checking against each other,
-	//   will make a collisionMatrix at another time to make it easier,
-	//   to change the interactions
-	std::vector<GameObject*> objects = scene->GetAllGameObjects();
-	objects.erase(std::remove_if(objects.begin(), objects.end(), [&](GameObject* obj) {
+	if (scene == nullptr) return;
+
+	std::vector<GameObject*> spatialColliders = scene->GetAllGameObjects();
+	scene->GetGrid().GetPotentialColliders(this, spatialColliders);
+	spatialColliders.erase(std::remove_if(spatialColliders.begin(), spatialColliders.end(), [&](GameObject* obj) {
 		return (obj->colLayer == CollisionLayer::PROJECTILE && this->colLayer == CollisionLayer::PROJECTILE);
-		}), objects.end());
+		}), spatialColliders.end());
 
 	if (scene != nullptr) {
-		collision->UpdateCollisions(objects);
+		collision->UpdateCollisions(spatialColliders);
 	}
 }
 
 bool GameObject::IsOutOfBounds() {
-	if (scene == nullptr) return false;
-	if (transform == nullptr) return false;
-	SDL_Surface* surface = SDL_GetWindowSurface(scene->GetWindow());
-	return (transform->position.X > surface->w || transform->position.Y > surface->h);
+	if (scene == nullptr || transform == nullptr) {
+		return false;
+	}
+
+	int windowWidth = scene->GetWindowSurface()->w;
+	int windowHeight = scene->GetWindowSurface()->h;
+
+	return (transform->position.X < 0 || transform->position.Y < 0 ||
+		transform->position.X >= windowWidth || transform->position.Y >= windowHeight);
+}
+
+void GameObject::SetActive(bool state) {
+	isActive = state;
 }

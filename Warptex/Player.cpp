@@ -44,14 +44,14 @@ void Player::Collision() {
 
 	// Based on current collisions, do:
 	std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
-	std::vector<GameObject*> objectsToRemove;
+	//std::vector<GameObject*> objectsToRemove;
 	for (int j = 0; j < collisions.size(); j++) {
 		switch (collisions[j]->GetTag()) {
 		case Tag::ENEMY_PROJ:
 			// What to do when hit by enemy proj
 			if (!dead) {
 				collisions[j]->SetActive(false);
-				objectsToRemove.push_back(collisions[j]);
+				//objectsToRemove.push_back(collisions[j]);
 			}
 			Logger::Info("Player %i collided with projectile %i", this, collision);
 			AudioHandler::Inst().PlaySound(1);

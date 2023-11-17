@@ -50,11 +50,11 @@ public:
 	virtual void Collision();
 
 	Sprite& GetSprite() { return *sprite; }
-	Transform& GetTransform() { return *transform; }
+	Transform& GetTransform() const { return *transform; }
 	Tag GetTag() { return objectTag; }
 	void SetTag(Tag tag) { objectTag = tag; }
 	CollisionLayer GetColLayer() { return colLayer; }
-	void SetActive(bool state) { isActive = state; }
+	void SetActive(bool state);
 	bool IsActive() { return isActive; }
 	bool IsOutOfBounds();
 
@@ -68,5 +68,5 @@ protected:
 	Sprite* sprite;
 	Transform* transform;
 	CollisionHandler* collision;
-	bool isActive;
+	bool isActive = false;
 };

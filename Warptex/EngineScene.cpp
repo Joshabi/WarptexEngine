@@ -12,6 +12,7 @@
 #include "Projectile.h"
 #include "RadialSpawner.h"
 #include "RadialPattern.h"
+#include "SpatialGridPartition.h"
 
 Player* testObject;
 Projectile* testProj;
@@ -37,6 +38,8 @@ void Scene::SetActive(bool state) {
 void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameRenderer = renderer;
 	gameWindow = window;
+	windowSurface = SDL_GetWindowSurface(gameWindow);
+	grid = new SpatialGridPartition(5,5);
 
 	// Initialization Information for Handlers:
 	Logger::Info("Texture Count %i", TextureHandler::Inst(gameRenderer).GameTextures.size());
@@ -85,11 +88,16 @@ void Scene::Main() {
 	Logger::Info("Scene State: %i", active);
 	while (active) {
 		// Main Engine Loop for standard scene
-		mainTimer.Reset();
+		mainTimer.Reset(); profilerTimer.Reset();
 
 		Input();
+		Logger::Info("Input: %i ticks", profilerTimer.TicksElapsed());
+		profilerTimer.Reset();
 		Update();
+		Logger::Info("Update: %i ticks", profilerTimer.TicksElapsed());
+		profilerTimer.Reset();
 		Render();
+		Logger::Info("Render: %i ticks", profilerTimer.TicksElapsed());
 
 		// Wait for additional ticks
 		if (mainTimer.TicksElapsed() < delta) {
@@ -128,9 +136,13 @@ void Scene::Input() {
 
 void Scene::Update() {
 	// Handle GameObject updates
+	grid->Update(GetAllGameObjects());
+	
 	for (int i = 0; i < sceneObjects.size(); i++) {
 		sceneObjects[i]->Update();
 	}
+
+	Logger::Info("Scene Objects: %i", sceneObjects.size());
 }
 
 void Scene::Render() {
@@ -138,8 +150,8 @@ void Scene::Render() {
 	SDL_RenderClear(gameRenderer);
 
 	// Render Objects
-	for (int i = 0; i < sceneObjects.size(); i++) {
-		sceneObjects[i]->Render();
+	for (const auto& obj : sceneObjects) {
+		obj->Render();
 	}
 
 	// Present Renderer

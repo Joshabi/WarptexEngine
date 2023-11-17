@@ -20,7 +20,6 @@ public:
 		for (Projectile* projectile : objectPool) {
 			if (!projectile->IsActive()) {
 				projPool.ReleaseObject(projectile);
-				// Perform any necessary cleanup for the projectile
 			}
 		}
 	}

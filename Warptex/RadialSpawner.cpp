@@ -86,6 +86,6 @@ void RadialSpawner::ChangePattern(RadialPattern pattern) {
 }
 
 void RadialSpawner::Update() {
-	CleanupInactiveProjectiles();
 	if (active) { RunActivePattern(); }
+	CleanupInactiveProjectiles();
 }

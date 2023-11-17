@@ -23,6 +23,8 @@ void Projectile::Initialize(int xPos, int yPos, float xVel, float yVel, float sp
 		this->topMoveSpeed = speed;
 		moveSpeed = 0;
 	}
+
+	SetActive(true);
 }
 
 Projectile::~Projectile() {
@@ -40,19 +42,15 @@ void Projectile::Update() {
 	sprite->SetPosition(transform->position);
 
 	// Out of bounds check, if so delete
-	if (IsOutOfBounds()) { SetActive(false); }
+	if (IsOutOfBounds()) { 
+		SetActive(false); 
+		Logger::Info("Projectile %i out of bounds", this);
+	}
 }
 
 void Projectile::Collision() {
 	// Implement Bouncing Here:
 	GameObject::Collision();
-
-	// Based on current collisions, do:
-	//std::vector<GameObject*> collisions = collision->GetCollisionsOfType<GameObject>();
-	//for (int j = 0; j < collisions.size(); j++) {
-	//	switch (collisions[j]->GetTag()) {
-    //
-	//}
 }
 
 void Projectile::HandleMovement() {

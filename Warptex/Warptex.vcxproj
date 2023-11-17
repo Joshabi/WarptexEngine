@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\Joshabi\Documents\GitHub\Warptex\Warptex\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,6 +142,7 @@
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="RadialPattern.cpp" />
     <ClCompile Include="RadialSpawner.cpp" />
+    <ClCompile Include="SpatialGridPartition.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TextureHandler.cpp" />
     <ClCompile Include="Timer.cpp" />
@@ -158,6 +160,7 @@
     <ClInclude Include="Projectile.h" />
     <ClInclude Include="RadialPattern.h" />
     <ClInclude Include="RadialSpawner.h" />
+    <ClInclude Include="SpatialGridPartition.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="TextureHandler.h" />
     <ClInclude Include="Timer.h" />

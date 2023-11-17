@@ -7,6 +7,7 @@
 #include "Timer.h"
 #include "Gameobject.h"
 #include "nlohmann/json.hpp"
+#include "SpatialGridPartition.h"
 
 #define MAX_KEYS (512)
 
@@ -22,6 +23,8 @@ public:
 
 	SDL_Window* GetWindow() { return gameWindow; }
 	SDL_Renderer* GetRenderer() { return gameRenderer; }
+	SDL_Surface* GetWindowSurface() { return windowSurface; }
+	SpatialGridPartition& GetGrid() { return *grid; }
 
 	void RegisterGameObject(GameObject* obj);
 	void DeregisterGameObject(GameObject* obj);
@@ -39,9 +42,12 @@ public:
 private:
 	SDL_Window* gameWindow;
 	SDL_Renderer* gameRenderer;
+	SDL_Surface* windowSurface;
+	SpatialGridPartition* grid;
 	bool gKeys[MAX_KEYS];
 
 	Timer mainTimer;
+	Timer profilerTimer;
 	std::vector<GameObject*> sceneObjects;
 	
 	float framesElapsed = 0;
