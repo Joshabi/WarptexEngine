@@ -19,6 +19,7 @@ public:
 		std::vector<Projectile*> objectPool = projPool.GetObjectPool();
 		for (Projectile* projectile : objectPool) {
 			if (!projectile->IsActive()) {
+				projectile->Initialize(0, 0, 0, 0, 0, 0);
 				projPool.ReleaseObject(projectile);
 			}
 		}

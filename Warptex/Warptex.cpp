@@ -13,6 +13,7 @@
 #include "Logger.h"
 #include "SDL_mixer.h"
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 #include "EngineScene.h"
 
 Scene scene;
@@ -37,10 +38,16 @@ int main(int argc, char* argv[]) {
         return 3;
     }
 
+    if (TTF_Init() < 0) {
+        Logger::Critical("Could not initialize SDL TTF");
+        return 4;
+    }
+
     // Initialize main window and renderer
     SDL_Window* mainGameWindow = SDL_CreateWindow("Warptex", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, !SDL_WINDOW_RESIZABLE);
     SDL_Renderer* mainRenderer = SDL_CreateRenderer(mainGameWindow, -1, SDL_RENDERER_ACCELERATED);
 
+    SDL_SetRenderDrawBlendMode(mainRenderer, SDL_BLENDMODE_BLEND);
     scene.Init(mainRenderer, mainGameWindow);
     scene.SetActive(true);
     scene.Main();

@@ -37,15 +37,15 @@ void RadialSpawner::RunActivePattern() {
 
 					// Get the projectile spawn points
 					for (int splitID = 0; splitID < currentPattern.splitStreamCount; splitID++) {
-						float streamAngle = currentAngle + (splitID * currentPattern.splitStreamAngleSpread);
+						float streamAngle = currentAngle + (splitID - currentPattern.splitStreamCount / 2.0f) * currentPattern.splitStreamAngleSpread;
 
 						// Clamp
-						if (currentAngle > 360) currentAngle -= 360;
+						streamAngle = fmod(streamAngle, 360.0f);
 
-						if (reversing) currentAngle = 360 - currentAngle;
+						if (reversing) streamAngle = 360 - streamAngle;
 
 						// Convert the angle to radians.
-						double radians = currentAngle * M_PI / 180.0;
+						double radians = streamAngle * M_PI / 180.0;
 
 						// Get Velocity Vector
 						float x = static_cast<float>(cos(radians));
@@ -57,9 +57,8 @@ void RadialSpawner::RunActivePattern() {
 						// Make a new projectile
 						Projectile* proj = projPool.GetObject();
 						proj->Initialize(posX, posY, x, y, currentPattern.projSpeed, currentPattern.projAccel);
-						
+
 						// Play Sound Effect Later
-						currentAngle += streamAngle;
 					}
 				}
 				AudioHandler::Inst().PlaySound(0);
@@ -86,6 +85,6 @@ void RadialSpawner::ChangePattern(RadialPattern pattern) {
 }
 
 void RadialSpawner::Update() {
-	if (active) { RunActivePattern(); }
 	CleanupInactiveProjectiles();
+	if (active) { RunActivePattern(); }
 }

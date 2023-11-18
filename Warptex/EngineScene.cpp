@@ -13,10 +13,12 @@
 #include "RadialSpawner.h"
 #include "RadialPattern.h"
 #include "SpatialGridPartition.h"
+#include "Menu.h"
 
 Player* testObject;
 Projectile* testProj;
 RadialSpawner* spawner;
+MenuHandler* menuHandler;
 
 // Deconstructor
 Scene::~Scene() {
@@ -35,10 +37,15 @@ void Scene::SetActive(bool state) {
 	active = state;
 }
 
+void Scene::SetPaused(bool state) {
+	pauseMenuActive = state;
+}
+
 void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	gameRenderer = renderer;
 	gameWindow = window;
 	windowSurface = SDL_GetWindowSurface(gameWindow);
+	menuHandler = new MenuHandler(this);
 	grid = new SpatialGridPartition(5,5);
 
 	// Initialization Information for Handlers:
@@ -50,10 +57,6 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 	testObject = new Player(this);
 	RegisterGameObject(testObject);
 	testObject->GetTransform().SetPosition(392, 600);
-
-	// Testing Purposes: Projectiles and Collisions
-	//testProj = new Projectile(this, 392, 450, 1, 1, 2, 0);
-	//RegisterGameObject(testProj);
 
 	// Testing Purposes: Radial Pattern Spawner
 	spawner = new RadialSpawner(this, 392, 200);
@@ -81,6 +84,8 @@ void Scene::Init(SDL_Renderer* renderer, SDL_Window* window) {
 
 	spawner->ChangePattern(pattern);
 	spawner->SetActive(true);
+
+	menuHandler->SetActiveMenu(&menuHandler->pauseMenu);
 }
 
 void Scene::Main() {
@@ -91,13 +96,13 @@ void Scene::Main() {
 		mainTimer.Reset(); profilerTimer.Reset();
 
 		Input();
-		Logger::Info("Input: %i ticks", profilerTimer.TicksElapsed());
+		Logger::Debug("Input: %i ticks", profilerTimer.TicksElapsed());
 		profilerTimer.Reset();
 		Update();
-		Logger::Info("Update: %i ticks", profilerTimer.TicksElapsed());
+		Logger::Debug("Update: %i ticks", profilerTimer.TicksElapsed());
 		profilerTimer.Reset();
 		Render();
-		Logger::Info("Render: %i ticks", profilerTimer.TicksElapsed());
+		Logger::Debug("Render: %i ticks", profilerTimer.TicksElapsed());
 
 		// Wait for additional ticks
 		if (mainTimer.TicksElapsed() < delta) {
@@ -125,24 +130,34 @@ void Scene::Input() {
 		}
 	}
 
-	// Handle GameObject inputs
-	for (int i = 0; i < sceneObjects.size(); i++) {
-		// For each key:
-		for (int key = 0; key < MAX_KEYS; key++) {
-			sceneObjects[i]->Input(key, gKeys[key]);
+	// Handle Input for all keys
+	for (int key = 0; key < MAX_KEYS; key++) {
+		// Update Game Objects if pause menu not active
+		if (!pauseMenuActive) {
+			for (int i = 0; i < sceneObjects.size(); i++) {
+				sceneObjects[i]->Input(key, gKeys[key]);
+			}
+
+			// Pause Game if ESC is pressed
+			if (gKeys[SDLK_ESCAPE]) {
+				menuHandler->SetActiveMenu(&menuHandler->pauseMenu);
+				pauseMenuActive = true;
+			}
 		}
+		// Update Menu
+		menuHandler->Input(key, gKeys[key]);
 	}
 }
 
 void Scene::Update() {
 	// Handle GameObject updates
-	grid->Update(GetAllGameObjects());
-	
-	for (int i = 0; i < sceneObjects.size(); i++) {
-		sceneObjects[i]->Update();
-	}
+	if (!pauseMenuActive) {
+		grid->Update(GetAllGameObjects());
 
-	Logger::Info("Scene Objects: %i", sceneObjects.size());
+		for (int i = 0; i < sceneObjects.size(); i++) {
+			sceneObjects[i]->Update();
+		}
+	}
 }
 
 void Scene::Render() {
@@ -154,9 +169,16 @@ void Scene::Render() {
 		obj->Render();
 	}
 
+	// Render Menu
+	menuHandler->Render();
+
 	// Present Renderer
 	SDL_RenderPresent(gameRenderer);
 }
 
-// Quits the scene
-void Scene::Quit() { Logger::Info("Ending Engine"); }
+// Quits the engine
+void Scene::QuitEngine() {
+	Logger::Info("Exiting Engine"); 
+	SDL_Quit();
+	exit(712);
+}

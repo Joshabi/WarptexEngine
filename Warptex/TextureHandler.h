@@ -7,6 +7,7 @@
 
 constexpr auto PLAYER_TEX = "./Assets/Artwork/Player.png";
 constexpr auto PROJECTILE_TEX = "./Assets/Artwork/Projectile.png";
+constexpr auto MENU_FRAME_TEX = "./Assets/Artwork/MenuFrame.png";
 
 /// <summary>
 /// Handles sprite loading for the engine

@@ -31,13 +31,14 @@ public:
 	std::vector<GameObject*> GetAllGameObjects() { return sceneObjects; }
 
 	void SetActive(bool state);
+	void SetPaused(bool state);
 	Timer* Time() { return &mainTimer; }
 	void Init(SDL_Renderer* renderer, SDL_Window* _window);
 	void Main();
 	void Input();
 	void Update();
 	void Render();
-	void Quit();
+	void QuitEngine();
 
 private:
 	SDL_Window* gameWindow;
@@ -53,4 +54,5 @@ private:
 	float framesElapsed = 0;
 	const float delta = 16.6666;
 	bool active = false;
+	bool pauseMenuActive = false;
 };

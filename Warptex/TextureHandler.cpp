@@ -8,6 +8,7 @@ bool TextureHandler::LoadTexture(std::string texturePath) {
 	if (surface == nullptr) { Logger::Warn("Unable to find texture asset at %i", texturePath); return false; }
 	else {
 		SDL_Texture* tex = SDL_CreateTextureFromSurface(renderer, surface);
+		SDL_SetTextureBlendMode(tex, SDL_BLENDMODE_BLEND);
 		GameTextures.insert({ GameTextures.size(), tex });
 		SDL_FreeSurface(surface);
 		return true;
@@ -28,4 +29,5 @@ SDL_Texture* TextureHandler::GetTexture(int ID) {
 TextureHandler::TextureHandler(SDL_Renderer* renderer) : renderer(renderer) {
 	LoadTexture(PLAYER_TEX);
 	LoadTexture(PROJECTILE_TEX);
+	LoadTexture(MENU_FRAME_TEX);
 }

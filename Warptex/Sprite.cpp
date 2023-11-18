@@ -32,7 +32,12 @@ Sprite::Sprite(SDL_Renderer* renderer, int TexID) {
 		tex = SDL_CreateTextureFromSurface(renderer, surface);
 		SDL_FreeSurface(surface);
 	}
-	Resize(16, 16);
+
+	int queryResult = SDL_QueryTexture(tex, nullptr, nullptr, &tRect.w, &tRect.h);
+	if (queryResult != 0) {
+		Logger::Warn("Unable to query texture: %i, defaulting to 16x16", TexID);
+		Resize(16, 16);
+	}
 }
 
 // Deconstructor
@@ -52,4 +57,12 @@ void Sprite::SetPosition(Vector2D position) {
 
 void Sprite::Resize(int w, int h) {
 	tRect.w = w; tRect.h = h;
+}
+
+void Sprite::SetOpacity(int opacity) {
+	opacity = std::min(std::max(opacity, 0), 255);
+	if (SDL_SetTextureAlphaMod(tex, opacity) != 0) {
+		// Handle error, print an error message, etc.
+		Logger::Error("SDL_SetTextureAlphaMod failed: %s", SDL_GetError());
+	}
 }

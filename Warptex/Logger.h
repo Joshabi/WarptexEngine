@@ -14,7 +14,7 @@
 /// Represents the priority of a log message
 /// </summary>
 enum LogPriority {
-	Info, Warning, Error, Critical
+	Debug, Info, Warning, Error, Critical
 };
 
 /// <summary>
@@ -22,7 +22,7 @@ enum LogPriority {
 /// </summary>
 class Logger {
 public:
-	LogPriority lowestLogPriority = LogPriority::Info;
+	LogPriority lowestLogPriority = LogPriority::Debug;
 
 	/// <summary>
 	/// Sets the current priority of the logger
@@ -50,6 +50,11 @@ public:
 	template<typename... Args>
 	static void Info(const char* message, Args... args) {
 		Inst().Log("[INFO] >> ", LogPriority::Info, message, args...);
+	}
+
+	template<typename... Args>
+	static void Debug(const char* message, Args... args) {
+		Inst().Log("[DEBUG] >> ", LogPriority::Debug, message, args...);
 	}
 
 private:

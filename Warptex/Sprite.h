@@ -20,6 +20,7 @@ public:
 	void Render(SDL_Renderer* renderer);
 	void SetPosition(Vector2D position);  // Set via coords
 	void Resize(int w, int h); // Set via width and height
+	void SetOpacity(int opacity); // Set opacity of sprite
 
 private:
 	SDL_Rect tRect;

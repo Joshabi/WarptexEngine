@@ -18,10 +18,14 @@ void Projectile::Initialize(int xPos, int yPos, float xVel, float yVel, float sp
 	transform->SetPosition(xPos, yPos);
 	this->accelRate = accelRate;
 
-	if (accelRate == 0) { moveSpeed = speed; }
+	moveSpeed = 0.0f;
+	topMoveSpeed = 0.0f;
+
+	if (accelRate == 0) {
+		moveSpeed = speed;
+	}
 	else {
 		this->topMoveSpeed = speed;
-		moveSpeed = 0;
 	}
 
 	SetActive(true);
@@ -44,7 +48,7 @@ void Projectile::Update() {
 	// Out of bounds check, if so delete
 	if (IsOutOfBounds()) { 
 		SetActive(false); 
-		Logger::Info("Projectile %i out of bounds", this);
+		Logger::Debug("Projectile %i out of bounds", this);
 	}
 }
 
