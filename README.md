@@ -5,7 +5,6 @@ flexible with configurable pattern generation, loading pattern designs from dat 
 
 Not all features have been ported or refactored yet, so a lot of features are currently missing.
 ### Currently reimplementing:
-- Menu Functionality
 - Lives, Game Over
 
 ### I would like to implement:
