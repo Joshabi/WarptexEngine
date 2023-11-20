@@ -1,0 +1,1051 @@
+Mon Nov 20 19:34:05 2023
+[INFO] >> 14
+Mon Nov 20 19:34:06 2023
+[INFO] >> 15
+Mon Nov 20 19:34:06 2023
+[INFO] >> 13
+Mon Nov 20 19:34:06 2023
+[INFO] >> 13
+Mon Nov 20 19:34:06 2023
+[INFO] >> 14
+Mon Nov 20 19:34:06 2023
+[INFO] >> 35
+Mon Nov 20 19:34:06 2023
+[INFO] >> 32
+Mon Nov 20 19:34:06 2023
+[INFO] >> 33
+Mon Nov 20 19:34:06 2023
+[INFO] >> 19
+Mon Nov 20 19:34:06 2023
+[INFO] >> 14
+Mon Nov 20 19:36:19 2023
+[INFO] >> Engine Started
+Mon Nov 20 19:36:19 2023
+[INFO] >> Texture Count 3
+Mon Nov 20 19:36:19 2023
+[INFO] >> Sound Count 2
+Mon Nov 20 19:36:19 2023
+[INFO] >> Music Count 0
+Mon Nov 20 19:36:19 2023
+[INFO] >> Player Created
+Mon Nov 20 19:36:19 2023
+[INFO] >> RadialSpawner Created at: x392 y200
+Mon Nov 20 19:36:19 2023
+[INFO] >> Opened test pattern successfully
+Mon Nov 20 19:36:19 2023
+[INFO] >> Changed active menu to -1913994904
+Mon Nov 20 19:36:19 2023
+[INFO] >> EngineScene Loading
+Mon Nov 20 19:36:19 2023
+[INFO] >> Scene State: 1
+Mon Nov 20 19:36:38 2023
+[INFO] >> Engine Started
+Mon Nov 20 19:36:38 2023
+[INFO] >> Texture Count 3
+Mon Nov 20 19:36:38 2023
+[INFO] >> Sound Count 2
+Mon Nov 20 19:36:38 2023
+[INFO] >> Music Count 0
+Mon Nov 20 19:36:38 2023
+[INFO] >> Player Created
+Mon Nov 20 19:36:38 2023
+[INFO] >> RadialSpawner Created at: x392 y200
+Mon Nov 20 19:36:38 2023
+[INFO] >> Opened test pattern successfully
+Mon Nov 20 19:36:38 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:38 2023
+[INFO] >> EngineScene Loading
+Mon Nov 20 19:36:38 2023
+[INFO] >> Scene State: 1
+Mon Nov 20 19:36:39 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:41 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:41 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:41 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:42 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:43 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:43 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:43 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:44 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:44 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:45 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:45 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:45 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:45 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:45 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:45 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:45 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:45 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:46 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:46 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:47 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:47 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:47 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:48 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:48 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:49 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:49 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:49 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:49 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:49 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:49 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:49 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:50 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:50 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:50 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:50 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:51 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:52 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:52 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:52 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:52 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:52 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:52 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:53 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:53 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:53 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:53 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:53 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:53 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:53 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:53 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:55 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:55 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:55 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:55 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:55 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:55 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:55 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:55 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:55 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:55 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:55 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:56 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:56 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:57 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:57 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:58 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:58 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:58 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:58 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:58 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:58 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:58 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:58 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:58 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:58 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:59 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:59 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:36:59 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:59 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:59 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:59 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:59 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:59 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:59 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:36:59 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:36:59 2023
+[INFO] >> Changed active menu to 633446184
+Mon Nov 20 19:37:00 2023
+[INFO] >> Menu System Disabled
+Mon Nov 20 19:37:00 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:00 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:00 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:00 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:01 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:02 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with enemy 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:03 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:04 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:04 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:05 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+Mon Nov 20 19:37:05 2023
+[INFO] >> Player 633451072 collided with projectile 633791712
+[INFO] >> Engine Started
+[INFO] >> Texture Count 3
+[INFO] >> Sound Count 2
+[INFO] >> Music Count 0
+[INFO] >> Player Created
+[INFO] >> RadialSpawner Created at: x392 y200
+[INFO] >> Opened test pattern successfully
+[INFO] >> Changed active menu to -1987453464
+[INFO] >> EngineScene Loading
+[INFO] >> Scene State: 1
+[INFO] >> Menu System Disabled
+[INFO] >> Player -1987449440 collided with projectile -1987220928
+[INFO] >> Player -1987449440 collided with projectile -1987220928
+[INFO] >> Player -1987449440 collided with projectile -1987220928
+[INFO] >> Player -1987449440 collided with projectile -1987220928
+[INFO] >> Changed active menu to -1987453464
+[INFO] >> Exiting Engine
+[INFO] >> Engine Started
+[INFO] >> Texture Count 3
+[INFO] >> Sound Count 2
+[INFO] >> Music Count 0
+[INFO] >> Player Created
+[INFO] >> RadialSpawner Created at: x392 y200
+[INFO] >> Opened test pattern successfully
+[INFO] >> Changed active menu to 371875848
+[INFO] >> EngineScene Loading
+[INFO] >> Scene State: 1
+Mon Nov 20 19:43:08 2023
+[INFO] >> Engine Started
+Mon Nov 20 19:43:09 2023
+[INFO] >> Texture Count 3
+Mon Nov 20 19:43:09 2023
+[INFO] >> Sound Count 2
+Mon Nov 20 19:43:09 2023
+[INFO] >> Music Count 0
+Mon Nov 20 19:43:09 2023
+[INFO] >> Player Created
+Mon Nov 20 19:43:09 2023
+[INFO] >> RadialSpawner Created at: x392 y200
+Mon Nov 20 19:43:09 2023
+[INFO] >> Opened test pattern successfully
+Mon Nov 20 19:43:09 2023
+[INFO] >> Changed active menu to -791685976
+Mon Nov 20 19:43:09 2023
+[INFO] >> EngineScene Loading
+Mon Nov 20 19:43:09 2023
+[INFO] >> Scene State: 1

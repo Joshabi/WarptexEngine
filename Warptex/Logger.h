@@ -1,4 +1,5 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 
 // *************************************************** //
 //  Handles logging events, and eventually output of   //
@@ -9,6 +10,7 @@
 #include <cstdio>
 #include <iostream>
 #include <chrono>
+#include <fstream>
 
 /// <summary>
 /// Represents the priority of a log message
@@ -58,7 +60,12 @@ public:
 	}
 
 private:
-	Logger() {}
+	std::ofstream logFile;
+
+	Logger() {
+		// Open the log file
+		logFile.open("log.txt", std::ios::out | std::ios::app);
+	}
 
 	/// <summary>
 	/// Returns static primary instance of Logger
@@ -89,6 +96,16 @@ private:
 			std::cout << timeStr << loggerMessage;
 			printf(message, args...);
 			printf("\n");
+
+			// Log to file
+			if (logFile.is_open()) {
+				char buffer[256];  // Adjust the buffer size as needed
+				int charsWritten = std::sprintf(buffer, message, args...);
+				logFile << timeStr << loggerMessage;
+				logFile.write(buffer, charsWritten);
+				logFile << "\n";
+				logFile.flush();
+			}
 		}
 	}
 };
