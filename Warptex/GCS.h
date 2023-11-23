@@ -40,7 +40,7 @@ public:
 	virtual void Init() {}
 	virtual void Update() {}
 	virtual void Input() {}
-	virtual void Render() {}
+	virtual void Render(SDL_Renderer* renderer) {}
 
 	virtual ~Component() {}
 };
@@ -53,6 +53,7 @@ public:
 		for (auto& c : components) c->Render();
 	}
 
+	void SetRenderer(SDL_Renderer* renderer) { this->renderer = renderer; }
 	void Render() {}
 	bool IsActive() const { return isActive; }
 	void Destroy() { isActive = false; }
@@ -81,6 +82,7 @@ public:
 	}
 
 protected:
+	SDL_Renderer* renderer;
 	bool isActive = true;
 	std::vector<std::unique_ptr<Component>> components;
 
@@ -101,8 +103,9 @@ public:
 		for (auto& o : objects) o->Render();
 	}
 
-	GObject& AddObject() {
+	GObject& AddObject(SDL_Renderer* renderer) {
 		GObject* o = new GObject();
+		o->SetRenderer(renderer);
 		std::unique_ptr<GObject> uPtr{ o };
 		objects.emplace_back(std::move(uPtr));
 		return *o;

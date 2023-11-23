@@ -134,6 +134,12 @@
     <ClInclude Include="GCS.h">
       <Filter>Source Files\Core\GCS</Filter>
     </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>Source Files\Core\GCS</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteComponent.h">
+      <Filter>Source Files\Core\GCS</Filter>
+    </ClInclude>
     <ClInclude Include="Components.h">
       <Filter>Source Files\Core\GCS</Filter>
     </ClInclude>
