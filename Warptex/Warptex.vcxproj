@@ -136,7 +136,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AudioHandler.cpp" />
-    <ClCompile Include="ColliderComponent.cpp" />
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="CollisionHandler.cpp" />
     <ClCompile Include="EngineScene.cpp" />
