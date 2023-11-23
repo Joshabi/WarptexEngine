@@ -154,8 +154,10 @@
     <ClInclude Include="AudioHandler.h" />
     <ClInclude Include="Collision.h" />
     <ClInclude Include="CollisionHandler.h" />
+    <ClInclude Include="Components.h" />
     <ClInclude Include="EngineScene.h" />
     <ClInclude Include="Gameobject.h" />
+    <ClInclude Include="GCS.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ObjectPool.h" />

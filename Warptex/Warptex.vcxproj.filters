@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Core\Menu System">
       <UniqueIdentifier>{b8bb1859-7899-4f12-b15e-1dec19832b94}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Core\GCS">
+      <UniqueIdentifier>{0f98019e-1bc9-498e-a884-f3c6d960f1f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Warptex.cpp">
@@ -127,6 +130,12 @@
     </ClInclude>
     <ClInclude Include="Menu.h">
       <Filter>Source Files\Core\Menu System</Filter>
+    </ClInclude>
+    <ClInclude Include="GCS.h">
+      <Filter>Source Files\Core\GCS</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.h">
+      <Filter>Source Files\Core\GCS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
