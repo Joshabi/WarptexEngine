@@ -4,6 +4,7 @@
 #include "Sprite.h"
 #include "EngineScene.h"
 #include "Transform.h"
+#include "ColliderComponent.h"
 #include "CollisionHandler.h"
 
 /// <summary>
@@ -17,17 +18,6 @@ enum class Tag {
 	FRIENDLY_PROJ = 4,
 	ENEMY_PROJ = 5,
 	COLLECTIBLE = 6
-};
-
-/// <summary>
-/// GameObject Collision Layers
-/// </summary>
-enum class CollisionLayer {
-	DEFAULT = 0,
-	PLAYER = 1,
-	ENEMY = 2,
-	PROJECTILE = 3,
-	OBSTACLE = 4
 };
 
 // Requires Scene Compiled

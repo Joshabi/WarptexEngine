@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <bitset>
 #include <array>
+#include <SDL.h>
 
 // Forward Declarations:
 class Component;
@@ -22,7 +23,7 @@ inline ComponentID GetComponentTypeID() {
 
 // Returns a unique ID for each component type:
 template <typename T> inline ComponentID GetComponentTypeID() noexcept {
-	static ComponentID typeID = getComponentTypeID();
+	static ComponentID typeID = GetComponentTypeID();
 	return typeID;
 }
 
@@ -50,7 +51,7 @@ public:
 	void Update() {
 		for (auto& c : components) c->Update();
 		for (auto& c : components) c->Input();
-		for (auto& c : components) c->Render();
+		for (auto& c : components) c->Render(renderer);
 	}
 
 	void SetRenderer(SDL_Renderer* renderer) { this->renderer = renderer; }
@@ -92,30 +93,32 @@ protected:
 
 class GameObjectRegister {
 protected:
-	std::vector<std::unique_ptr<GObject>> objects;
+	std::vector<std::unique_ptr<GObject>> activeObjects;
 
 public:
 	void Update() {
-		for (auto& o : objects) o->Update();
+		for (auto& o : activeObjects) o->Update();
 	}
 
 	void Render() {
-		for (auto& o : objects) o->Render();
+		for (auto& o : activeObjects) o->Render();
 	}
 
 	GObject& AddObject(SDL_Renderer* renderer) {
 		GObject* o = new GObject();
 		o->SetRenderer(renderer);
 		std::unique_ptr<GObject> uPtr{ o };
-		objects.emplace_back(std::move(uPtr));
+		activeObjects.emplace_back(std::move(uPtr));
 		return *o;
 	}
 
-	void Refresh() {
-		objects.erase(std::remove_if(std::begin(objects), std::end(objects),
+	void DeregisterInactive() {
+		activeObjects.erase(std::remove_if(std::begin(activeObjects), std::end(activeObjects),
 			[](const std::unique_ptr<GObject>& mGameObject) {
 				return !mGameObject->IsActive();
 			}),
-			std::end(objects));
+			std::end(activeObjects));
 	}
+
+	const std::vector<std::unique_ptr<GObject>>& GetActiveObjects() const { return activeObjects; }
 };

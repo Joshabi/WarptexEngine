@@ -14,7 +14,8 @@ public:
 	void Init() override {
 		position = Vector2D(0, 0);
 		velocity = Vector2D(0, 0);
-		scale = Vector2D(0, 0);
+		size = Vector2D(0, 0);
+		scale = Vector2D(1,1);
 		rotation = 0;
 	}
 
@@ -25,6 +26,7 @@ public:
 
 	// Setters
 	void SetScale(float x, float y) { scale.X = x; scale.Y = y; }
+	void SetSize(float x, float y) { size.X = x; size.Y = y; }
 	void SetPosition(float x, float y) { position.X = x; position.Y = y; }
 	void SetVelocity(float x, float y) { velocity.X = x; velocity.Y = y; }
 	inline void Translate(Vector2D moveVector) { position.X += moveVector.X; position.Y += moveVector.Y; }
@@ -34,11 +36,13 @@ public:
 	Vector2D GetPosition() { return position; }
 	Vector2D GetVelocity() { return velocity; }
 	Vector2D GetScale() { return scale; }
+	Vector2D GetSize() { return size; }
 	float GetRotation() { return rotation; }
 
 protected:
 	Vector2D position;
 	Vector2D velocity;
 	Vector2D scale;
+	Vector2D size;
 	float rotation;
 };

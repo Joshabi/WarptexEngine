@@ -1,6 +1,7 @@
 // Includes:
 #include "Gameobject.h"
 
+
 // Empty Constructor
 GameObject::GameObject(Scene* scene) {
 	this->scene = scene;

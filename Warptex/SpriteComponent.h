@@ -21,9 +21,10 @@ public:
 
 		int queryResult = SDL_QueryTexture(tex, nullptr, nullptr, &tRect.w, &tRect.h);
 		if (queryResult != 0) {
-			Logger::Warn("Unable to query texture: %i, defaulting to 16x16", TexID);
+			Logger::Warn("Unable to query texture: %i, defaulting to 16x16", texturePath);
 			Resize(16, 16);
 		}
+		Init();
 	}
 
 	// Construct Sprite given Texture ID
@@ -36,6 +37,7 @@ public:
 			Logger::Warn("Unable to query texture: %i, defaulting to 16x16", TexID);
 			Resize(16, 16);
 		}
+		Init();
 	}
 
 	// Destruct Sprite
@@ -46,6 +48,10 @@ public:
 	}
 
 	void Init() override {
+		// If the parent object has a transform component, use it, else make a new one and attatch it
+		if (!parentObject->HasComponent<TransformComponent>()) {
+			parentObject->AddComponent<TransformComponent>();
+		}
 		transform = &parentObject->GetComponent<TransformComponent>();
 	}
 
@@ -83,7 +89,7 @@ public:
 
 	SDL_Rect GetRect() { return tRect; }
 	void SetPosition(Vector2D position) { tRect.x = position.X; tRect.y = position.Y; }
-	void Resize(int w, int h) { tRect.w = w; tRect.h = h; }
+	void Resize(int w, int h) { tRect.w = w; tRect.h = h; transform->SetSize(w, h); }
 	void SetOpacity(int opacity) {
 		opacity = std::min(std::max(opacity, 0), 255);
 		if (SDL_SetTextureAlphaMod(tex, opacity) != 0) {
