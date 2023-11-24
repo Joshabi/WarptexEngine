@@ -93,7 +93,7 @@ protected:
 
 class GameObjectRegister {
 protected:
-	std::vector<std::unique_ptr<GObject>> activeObjects;
+	std::vector<std::shared_ptr<GObject>> activeObjects;
 
 public:
 	void Update() {
@@ -107,18 +107,24 @@ public:
 	GObject& AddObject(SDL_Renderer* renderer) {
 		GObject* o = new GObject();
 		o->SetRenderer(renderer);
-		std::unique_ptr<GObject> uPtr{ o };
-		activeObjects.emplace_back(std::move(uPtr));
+		std::shared_ptr<GObject> sPtr{ o };
+		activeObjects.emplace_back(std::move(sPtr));
 		return *o;
 	}
 
 	void DeregisterInactive() {
 		activeObjects.erase(std::remove_if(std::begin(activeObjects), std::end(activeObjects),
-			[](const std::unique_ptr<GObject>& mGameObject) {
+			[](const std::shared_ptr<GObject>& mGameObject) {
 				return !mGameObject->IsActive();
 			}),
 			std::end(activeObjects));
 	}
 
-	const std::vector<std::unique_ptr<GObject>>& GetActiveObjects() const { return activeObjects; }
+	/// <summary>
+	/// Returns all active objects
+	/// </summary>
+	/// <returns></returns>
+	const std::vector<std::shared_ptr<GObject>>& GetActiveObjects() const {
+		return activeObjects;
+	}
 };
